@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
+:root {
+  --action-color: #B28028;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 200vh;
+}
+
+.b-300 {
+  font-weight: 300;
+}
+
+.b-400 {
+  font-weight: 400;
+}
+
+.b-600 {
+  font-weight: 600;
+}
+
+.b-700 {
+  font-weight: 700;
+}
+
+.b-800 {
+  font-weight: 800;
+}
+
+.b-900 {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+/*  ***** Margins and Padding ***** */
+.mx-2 {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.mx-4 {
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.no-margin-top {
+  margin-top: -30px !important;
+}
+
+.my-20 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.rot-180 {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.small-font {
+  font-size: 14px !important;
+}
+
+.bullet {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background: #333;
+}
+
+/*  ***** XXX Margins and Padding XXX ***** */
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 120px;
+  border-bottom: 2px solid #ddd;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.title-container .title {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.title-container .subtitle {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #616161;
+}
+
+.container {
+  height: calc(100vh - 123px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 320px auto;
+      grid-template-columns: 320px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  *****  Sidebar ***** */
+.sidebar {
+  background: #FEFEFE;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 2px solid #ddd;
+  height: 280vh;
+}
+
+.profile-image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 180px;
+  width: 180px;
+  border-radius: 115px;
+  margin: 20px auto;
+  border: 4px solid #B28028;
+  background-image: url("./pic-2.jpeg");
+  background-size: cover;
+}
+
+.side-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.side-subtitle {
+  font-size: 20px;
+  color: #333;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.skill-container {
+  width: 100%;
+  margin: 5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skill-name {
+  font-size: 18px;
+  width: 150px;
+  color: #616161;
+}
+
+.skill-bar-container {
+  background: #ccc;
+  width: 120px;
+  margin-top: 4px;
+  height: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.skill-orange {
+  height: 15px;
+  background: #616161;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  top: 0;
+}
+
+.contact-container {
+  position: relative;
+  top: 40px;
+}
+
+.contacts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+      grid-template-columns: 40px auto;
+  margin: 3px 0;
+  color: #616161;
+}
+
+.contact-icon {
+  width: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  background: #FEFEFE;
+  bottom: 0;
+}
+
+/*  *****  XXX Sidebar XXX ***** */
+/* ****** Main ****** */
+.main {
+  background: #FEFEFE;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* ****** XXX Main XXX ****** */
+  /* ***** EXperience Section ***** */
+  /* ***** xxx EXperience Section xxx ***** */
+  /* ***** Projects Section ***** */
+  /* ***** xxx Projects Section xxx ***** */
+  /* ***** Education Section ***** */
+}
+
+.main .main-section {
+  margin: 5px 100px 30px 10px;
+}
+
+.main .main-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.main .main-section-text {
+  color: #616161;
+  font-weight: 400;
+  width: 420px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.main .project-section-text {
+  color: #616161;
+  width: 80vw;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.main .experience-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.main .experience-container .experience-date {
+  margin-bottom: 10px;
+  color: #616161;
+  font-size: 18px;
+}
+
+.main .experience-container .experience-date .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  background: #B28028;
+}
+
+.main .project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 20px 20px 10px;
+}
+
+.main .project-container .project-title {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.main .project-container .project-date {
+  color: #616161;
+  font-size: 16px;
+}
+
+.main .project-container .project-link {
+  font-size: 14px;
+  color: blueviolet;
+  font-style: normal;
+}
+
+.main .project-container .project-link-title {
+  font-size: 14px;
+  color: #333;
+}
+
+.main .project-container .tags-container {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.main .project-container .tags-container .tag {
+  background: #eee;
+  color: #444;
+  display: inline-block;
+  font-size: 14px;
+  padding: 4px 15px;
+  border-radius: 15px;
+  margin-right: 7px;
+}
+
+.main .education-title {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.main .education-title-2 {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.main .education-subtitle {
+  color: #616161;
+  font-size: 18px;
+  margin: 2px 0 5px 0;
+}
+
+/* ***** xxx Education Section xxx ***** */
